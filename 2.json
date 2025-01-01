@@ -1,0 +1,134 @@
+
+{
+  "exportTime": "2025-01-01T08:38:18.461Z",
+  "version": "0.1",
+  "globalConfig": {
+    "GLOBAL_KEYWORDS": true,
+    "GLOBAL_USERNAMES": true,
+    "SHOW_BLOCK_BUTTON": "hover",
+    "global_SECTION_COLLAPSED": false,
+    "keywords_SECTION_COLLAPSED": false,
+    "usernames_SECTION_COLLAPSED": false,
+    "url_SECTION_COLLAPSED": false,
+    "xpath_SECTION_COLLAPSED": false,
+    "EDITOR_STATES": {
+      "keywords": true,
+      "keywords_regex": false,
+      "usernames": false,
+      "usernames_regex": false
+    }
+  },
+  "userConfig": [
+    {
+      "domain": "nodeseek.com",
+      "enabled": true,
+      "mainPageUrlPatterns": [
+        "^/$"
+      ],
+      "subPageUrlPatterns": [
+        "/page*"
+      ],
+      "contentPageUrlPatterns": [
+        "/post*"
+      ],
+      "shareKeywordsAcrossPages": false,
+      "shareUsernamesAcrossPages": true,
+      "mainAndSubPageKeywords": {
+        "xpath": [
+          "//li[@class=\"post-list-item\"]//div[@class=\"post-title\"]//a/text()"
+        ]
+      },
+      "mainAndSubPageUserKeywords": {
+        "xpath": [
+          "//li[@class=\"post-list-item\"]//div[@class=\"post-info\"]//a/text()"
+        ]
+      },
+      "contentPageKeywords": {
+        "xpath": [
+          "//li[@class=\"content-item\"]//article[@class=\"post-content\"]//p/text()"
+        ]
+      },
+      "contentPageUserKeywords": {
+        "xpath": [
+          "//li[@class=\"content-item\"]//a[@class=\"author-name\"]/text()"
+        ]
+      }
+    },
+    {
+      "domain": "hostloc.com",
+      "enabled": true,
+      "shareKeywordsAcrossPages": true,
+      "shareUsernamesAcrossPages": true,
+      "mainPageUrlPatterns": [
+        "/forum*"
+      ],
+      "subPageUrlPatterns": [
+        "/forum*"
+      ],
+      "contentPageUrlPatterns": [
+        "/thread*"
+      ],
+      "mainAndSubPageKeywords": {
+        "xpath": [
+          "//tbody//a[@class=\"s xst\"]/text()"
+        ],
+        "keywords": [
+          "a",
+          "b",
+          "cww",
+          "asdada"
+        ]
+      },
+      "mainAndSubPageUserKeywords": {
+        "xpath": [
+          "//tbody//td[@class=\"by\"]//a/text()"
+        ]
+      },
+      "contentPageKeywords": {
+        "xpath": [
+          "//div[@id]//td[@class=\"t_f\"]/text()"
+        ]
+      },
+      "contentPageUserKeywords": {
+        "xpath": [
+          "//div[@id]//tbody//a[@class=\"xw1\"]/text()"
+        ]
+      }
+    },
+    {
+      "domain": "nodeloc.com",
+      "enabled": true,
+      "mainPageUrlPatterns": [
+        "^/$"
+      ],
+      "subPageUrlPatterns": [
+        "^/$"
+      ],
+      "contentPageUrlPatterns": [
+        "/d/*"
+      ],
+      "shareKeywordsAcrossPages": false,
+      "shareUsernamesAcrossPages": true,
+      "mainAndSubPageKeywords": {
+        "xpath": [
+          "//li//h2[@class=\"DiscussionListItem-title\"]/text()"
+        ]
+      },
+      "mainAndSubPageUserKeywords": {
+        "xpath": [
+          "//li//a[@class=\"DiscussionListItem-author\"]/@data-original-title"
+        ]
+      },
+      "contentPageKeywords": {
+        "xpath": [
+          "//div[@class=\"PostStream-item\"]//div[@class=\"Post-body\"]//p/text()"
+        ]
+      },
+      "contentPageUserKeywords": {
+        "xpath": [
+          "//div[@class=\"PostStream-item\"]//li[@class=\"item-user\"]//span/text()"
+        ]
+      }
+    }
+  ]
+}
